@@ -7,11 +7,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { HttpClientModule } from '@angular/common/http';
 import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule } from  '@angular/material';
+import { AccountsComponent } from './accounts/accounts.component';
+import { CreateAccountComponent } from './create-account/create-account.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AccountsComponent,
+    CreateAccountComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +25,6 @@ import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatBu
     BrowserAnimationsModule,
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule,
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
