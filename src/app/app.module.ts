@@ -1,16 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MatCardModule } from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
-import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule } from  '@angular/material';
 import { AccountsComponent } from './accounts/accounts.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
-import { HomeComponent } from './home/home.component';
+import { NavComponent } from './nav/nav.component';
+import { FullComponent } from './layout/full/full.component';
+import { BlankComponent } from './layout/blank/blank.component';
 
 
 @NgModule({
@@ -18,7 +19,9 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     AccountsComponent,
     CreateAccountComponent,
-    HomeComponent
+    NavComponent,
+    FullComponent,
+    BlankComponent
   ],
   imports: [
     BrowserModule,
@@ -26,13 +29,9 @@ import { HomeComponent } from './home/home.component';
     BrowserAnimationsModule,
     DragDropModule,
     MatCardModule,
+    FontAwesomeModule,
     BrowserModule,
-    HttpClientModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatListModule,
-    MatButtonModule,
-    MatIconModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
