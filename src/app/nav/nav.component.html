@@ -6,21 +6,21 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav m-l mr-auto mt-2 mt-lg-0">
         <li class="nav-item" [routerLinkActive]="['active']">
-          <a class="nav-link" [routerLink]="['/aboutMe/home']">Home</a>
+          <a class="nav-link" (click) = "closeMenu()" [routerLink]="['/aboutMe/home']">Home</a>
         </li>
         <li class="nav-item" [routerLinkActive]="['active']">
-          <a class="nav-link" [routerLink]="['/aboutMe/jobs']">Jobs</a>
+          <a class="nav-link" (click) = "closeMenu()" [routerLink]="['/aboutMe/jobs']">Jobs</a>
         </li>
         <li class="nav-item" [routerLinkActive]="['active']">
-          <a class="nav-link" [routerLink]="['/aboutMe/interests']">Interests</a>
+          <a class="nav-link" (click) = "closeMenu()" [routerLink]="['/aboutMe/interests']">Interests</a>
         </li>
         <li class="nav-item" [routerLinkActive]="['active']">
-            <a class="nav-link" [routerLink]="['/aboutMe/duties']">Duties</a>
+            <a class="nav-link" (click) = "closeMenu()" [routerLink]="['/aboutMe/duties']">Duties</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['active']">
-            <a class="nav-link" [routerLink]="['/aboutMe/other']">Other</a>
+            <a class="nav-link" (click) = "closeMenu()" [routerLink]="['/aboutMe/other']">Other</a>
           </li>
-        <li class="nav-item dropdown">
+        <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Dropdown button
             </a>
@@ -29,13 +29,13 @@
               <a class="dropdown-item">Another action</a>
               <a class="dropdown-item">Something else here</a>
             </div>
-          </li>
+          </li> -->
       </ul>
       <div class="form-inline my-2 my-lg-0">
         <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
         <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
         <!-- <ul> -->
-            <a href="">user_logged_in</a>
+            <!-- <a href="">user_logged_in</a> -->
         <!-- </ul> -->
       </div>
     </div>

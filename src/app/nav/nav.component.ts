@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-nav',
@@ -7,10 +6,18 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
-  faCoffee = faCoffee;
   constructor() { }
+  navbarOpen = false;
+
+  closeMenu() {
+    var isMobile = /iPhone|iPad|iPod|BlackBerry|Opera Mini|IEMobile|Android/i.test(navigator.userAgent);
+    if (isMobile) {
+      document.getElementById('navButton').click();
+    }
+  }
 
   ngOnInit() {
   }
+
 
 }

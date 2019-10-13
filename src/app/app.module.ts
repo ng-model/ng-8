@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MatCardModule } from '@angular/material/card';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { AccountsComponent } from './accounts/accounts.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
@@ -25,6 +26,7 @@ import { BlankComponent } from './layout/blank/blank.component';
   ],
   imports: [
     BrowserModule,
+    NgbModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     DragDropModule,

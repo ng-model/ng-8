@@ -9,5 +9,9 @@ if (environment.production) {
   enableProdMode();
 }
 
+var isMobile = /iPhone|iPad|iPod|BlackBerry|Opera Mini|IEMobile|Android/i.test(navigator.userAgent);
+    if (isMobile) {
+      alert('This is a web app, So try in PC.');
+    }
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
