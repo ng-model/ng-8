@@ -11,12 +11,12 @@ export class JobsComponent implements OnInit {
   closeResult: string;
   date; 
   jobs = [
-  {'year': 'Dec, 2017 - Current', 'ti': '', 'position': 'Web Developer Lead', 'client': 'WEX Inc', 'class': 'text-success', 'icon': 'done_all', 'duties': 'Develop the Angular Web application as per the business requirement'},
-  {'year': 'June, 2016 - Oct, 2017', 'ti': 'timeline-inverted', 'position': 'Web Developer', 'client': 'WEX Inc', 'class': 'text-warning', 'icon': 'timer', 'duties': 'Develop the Angular Web application as per the business requirement'},
-  {'year': 'March, 2016 - May, 2016', 'ti': '', 'position': 'Application Developer', 'client': 'E & J Gallo Winery', 'class': 'text-success', 'icon': 'timer', 'duties': 'Develop the Angular Web application as per the business requirement'},
-  {'year': 'Dec, 2015 - Feb, 2016', 'ti': 'timeline-inverted', 'position': 'Web/UI Developer', 'client': 'CNO Financial Group', 'class': 'text-info', 'icon': 'timer', 'duties': 'Develop the Angular Web application as per the business requirement'},
-  {'year': 'Feb, 2015 - Nov, 2015', 'ti': '', 'position': 'Application Developer', 'client': 'CSAA Insurance Group', 'class': 'text-primary', 'icon': 'timer', 'duties': 'Develop the Angular Web application as per the business requirement'},
-  {'year': 'July, 2012 - June, 2013', 'ti': 'timeline-inverted', 'position': 'Developer', 'client': 'Satyam', 'class': 'text-danger', 'icon': 'timer', 'duties': 'Develop the Angular Web application as per the business requirement'},
+  {'year': 'Dec, 2017 - Current', 'ti': '', 'position': 'Web Developer Lead', 'client': 'WEX Inc', 'class': 'text-success', 'icon': 'done_all', 'duties': 'Responsible for developing POC mobile/web and integrate with REST api to deliver the product.'},
+  {'year': 'June, 2016 - Oct, 2017', 'ti': 'timeline-inverted', 'position': 'Web Developer', 'client': 'WEX Inc', 'class': 'text-warning', 'icon': 'timer', 'duties': 'Develop/Lead the Onsite Angular/UI team as well code the UX visuals into beautiful Angular Material Web pages as per the client requirement'},
+  {'year': 'March, 2016 - May, 2016', 'ti': '', 'position': 'Application Developer', 'client': 'E & J Gallo Winery', 'class': 'text-success', 'icon': 'timer', 'duties': 'Develop the Web application in KENDO, to handle bulk amount of data in grids'},
+  {'year': 'Dec, 2015 - Feb, 2016', 'ti': 'timeline-inverted', 'position': 'Web/UI Developer', 'client': 'CNO Financial Group', 'class': 'text-info', 'icon': 'timer', 'duties': 'Develop a cordova Hybrid application in Angular v1.x'},
+  {'year': 'Feb, 2015 - Nov, 2015', 'ti': '', 'position': 'Application Developer', 'client': 'CSAA Insurance Group', 'class': 'text-primary', 'icon': 'timer', 'duties': 'To develop an Insurance Web app with JAVA in the backend and to meet the deadline in time to ship the software'},
+  {'year': 'July, 2012 - June, 2013', 'ti': 'timeline-inverted', 'position': 'Developer', 'client': 'Satyam', 'class': 'text-danger', 'icon': 'timer', 'duties': 'Gather business requirements, learn to code peer to peer, push code to Github, planning poker to size the user stories.'},
 ];
   year: any;
   position: any;
@@ -32,7 +32,7 @@ export class JobsComponent implements OnInit {
 
 
   open(content) {
-    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
+    this.modalService.open(content, { scrollable: true, size: 'lg' }).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
     }, (reason) => {
       this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;

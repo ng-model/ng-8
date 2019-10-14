@@ -80,19 +80,29 @@
 
     <ng-template #content let-modal>
             <div class="modal-header">
-              <h4 class="modal-title" id="modal-basic-title">{{client}}</h4>
+              <h4 class="modal-title" id="modal-basic-title">{{client}} <small class="text-muted pl-4">{{year}}</small></h4>
               <button type="button" class="close"  (click)="modal.dismiss('Cross click')">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body" style="line-height: 3;">
               <!-- <form> -->
                 <div class="form-group">
-                  <label for="dateOfBirth">Responsibilities</label>
+                  <h5 for="dateOfBirth"><u>Responsibilities</u></h5>
                   <div class="input-group">
-                      <p>{{duties}}</p>
-                    <!-- <input id="dateOfBirth" class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #dp="ngbDatepicker"> -->
-                    
+                     <small>- As a Certified Agile developer, my line of work involves coding, troubleshooting, customizing web apps in time as per the client requirement and business value to it. </small>
+                     <small> -   Expertise in debugging and problem solving in dev environment.</small>
+                        <small>- Experienced in working with MVC Architecture and also in using version control (SVN) and GIT/Bitbucket. </small>
+                            <small>-  Working with Agile teams, iterative software development methodology best practices. </small>
+                                <small>-  Understanding fundamental design principles behind a scalable application. </small>
+                                    <small> - Expertise in multiple delivery platforms, such as mobile vs. desktop, and optimizing output to match the specific platform.</small>
+                                        <small> -  Knowledge on Node JS and frameworks available for it such as Express, Strong Loop, etc. </small>
+                                            <small>-   Worked on modern browsers like Mozilla Firefox, Google Chrome, Safari and Edge. </small>
+                                                <small>-   Strong HTML5/CSS3 skills with solid knowledge of usability, accessibility and cross browser issues. </small>
+                                                    <small> -  Developed many web applications with Single Page Architecture. </small>
+                                                        <small>-   Excellent skills in relationship management with clients and effective in guiding team during the project development life cycle and deliver the product within time, cost and quality. </small>
+                                                            <small> -  Strong communication, planning and problem-solving skills, with ability to work independently or with cross-functional teams. </small>
+                      
                   </div>
                 </div>
               <!-- </form> -->
