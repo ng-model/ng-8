@@ -7,6 +7,8 @@ import { OtherComponent } from './other/other.component';
 import { ResponsibilityComponent } from './responsibility/responsibility.component';
 import { HomeComponent } from './home/home.component';
 import { DataTablesModule } from 'angular-datatables';
+import { ChartsModule } from '@progress/kendo-angular-charts';
+
 
 
 @NgModule({
@@ -14,6 +16,7 @@ import { DataTablesModule } from 'angular-datatables';
   imports: [
     CommonModule,
     DataTablesModule,
+    ChartsModule,
     ExpertiseRoutingModule
   ]
 })
