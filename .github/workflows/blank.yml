@@ -1,2 +1,2 @@
-- name: GH Pages deploy
-  uses: ng deploy --base-href=/ng-8/
+- name: GitHub Pages Deploy
+  uses: maxheld83/ghpages@v0.2.1
